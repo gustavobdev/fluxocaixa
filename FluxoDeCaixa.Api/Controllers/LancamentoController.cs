@@ -1,4 +1,5 @@
 ﻿using FluxoDeCaixa.Api.Domain.DataObjects;
+using FluxoDeCaixa.Api.Domain.Domain;
 using FluxoDeCaixa.Api.Infra.Interface;
 using FluxoDeCaixa.Api.Service.Interface;
 using Microsoft.AspNetCore.Http;
@@ -106,6 +107,31 @@ public class LancamentoController : ControllerBase
         }
     }
 
+    [HttpPost("consolidado")]
+    public async Task<IActionResult> PostConsolidado(ConnsolidadoDTO consolidadoDTO)
+    {
+        try
+        {
+            var objects = await _lancamentoService.PostConsolidado(consolidadoDTO);
 
+            if (objects != null)
+            {
+                return Ok(objects);
+            }
+            else
+            {
+                return NotFound(objects);
+            }
+        }
+        catch (Exception)
+        {
+            return BadRequest(new ResultViewModel
+            {
+                Message = "Erro ao processar sua solicitação",
+                Success = false,
+                Data = ""
+            });
+        }
+    }
 
 }

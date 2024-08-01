@@ -87,4 +87,29 @@ public class LancamentoService : ILancamentoService
 
         return result;
     }
+
+    public async Task<ResultViewModel> PostConsolidado(ConnsolidadoDTO consolidadoDTO)
+    {
+        if (consolidadoDTO.Lancamentos != null)
+        {
+
+            var Result = await _lancamentoRepository.PostConsolidado(consolidadoDTO);
+            return Result;
+
+           
+        }
+        else
+        {
+            var condicao = new ResultViewModel
+            {
+                Data = "",
+                Message = "Informe ao menos um lançamento para realizar a consolidação",
+                Success = false
+            };
+
+            return condicao;
+        }
+
+        
+    }
 }

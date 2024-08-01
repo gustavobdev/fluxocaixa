@@ -13,4 +13,5 @@ public interface ILancamentoService
     Task<ResultViewModel> InsereLancamento(LancamentoDTO lancamentoDTO);
     Task<ResultViewModel> GetAllLancamentos();
     Task<ResultViewModel> GetLancamentoByData(DateTime startTime, DateTime endTime);
+    Task<ResultViewModel> PostConsolidado(ConnsolidadoDTO consolidadoDTO);
 }

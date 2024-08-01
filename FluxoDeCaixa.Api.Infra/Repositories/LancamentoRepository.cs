@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace FluxoDeCaixa.Api.Infra.Repositories;
 
@@ -18,9 +19,9 @@ public class LancamentoRepository : ILancamentoRepository
     readonly DataContext _context;
 
     public LancamentoRepository(DataContext context)
-	{
-		_context = context;
-	}
+    {
+        _context = context;
+    }
 
     public async Task<ResultViewModel> GetAllLancamentos()
     {
@@ -132,43 +133,115 @@ public class LancamentoRepository : ILancamentoRepository
 
     public async Task<ResultViewModel> InsereLancamento(LancamentoDTO lancamentoDTO)
     {
-		try
-		{
-			var selectQuery = new StringBuilder();
+        try
+        {
+            var selectQuery = new StringBuilder();
             selectQuery.Append("INSERT INTO lancamentos ( descricao, valor, tipo, data, consolidado ) VALUES ( @descricao , @valor , @tipo , @data , @consolidado )");
-			
+
             var connectionString = _context.Database.GetConnectionString();
 
-			using (var conn = new SqlConnection(connectionString))
-			{
-				conn.Open();
-				using (var cmd = new SqlCommand(selectQuery.ToString(), conn))
-				{
-					// Adiciona os parâmetros para evitar injeção de SQL
-					cmd.Parameters.AddWithValue("@descricao", lancamentoDTO.Descricao);
+            using (var conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                using (var cmd = new SqlCommand(selectQuery.ToString(), conn))
+                {
+                    // Adiciona os parâmetros para evitar injeção de SQL
+                    cmd.Parameters.AddWithValue("@descricao", lancamentoDTO.Descricao);
                     cmd.Parameters.AddWithValue("@valor", lancamentoDTO.valor);
                     cmd.Parameters.AddWithValue("@tipo", lancamentoDTO.Tipo);
                     cmd.Parameters.AddWithValue("@data", lancamentoDTO.Data);
                     cmd.Parameters.AddWithValue("@consolidado", lancamentoDTO.Consolidado);
 
-					cmd.ExecuteNonQuery();
+                    cmd.ExecuteNonQuery();
                 }
 
-				conn.Close();
+                conn.Close();
 
-				var result =  new ResultViewModel()
-				{
-					Data = "",
-					Message = "Lançamento registrado com sucesso!",
-					Success = true
-				};
+                var result = new ResultViewModel()
+                {
+                    Data = "",
+                    Message = "Lançamento registrado com sucesso!",
+                    Success = true
+                };
 
-				return result;
+                return result;
 
             }
         }
-		catch (Exception ex)
-		{
+        catch (Exception ex)
+        {
+            var result = new ResultViewModel()
+            {
+                Data = ex.Message,
+                Message = "Ocorreu um erro na execução da query de inserção de lançamento",
+                Success = false
+            };
+
+            return result;
+        }
+    }
+
+    public async Task<ResultViewModel> PostConsolidado(ConnsolidadoDTO consolidadoDTO)
+    {
+        try
+        {
+            var insertQuery = new StringBuilder();
+            var updateQuery = new StringBuilder();
+            var selectQuery = new StringBuilder();
+            insertQuery.Append("INSERT INTO consolidados ( referencia, data, finalizado) VALUES ( @referencia ,'" + DateTime.Now + "', '" + true + "' )");
+
+            selectQuery.Append("SELECT top(1) id from consolidados order by id desc");
+
+            var connectionString = _context.Database.GetConnectionString();
+
+            int consol = 0;
+
+            using (var conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                using (var cmd = new SqlCommand(insertQuery.ToString(), conn))
+                {
+                    // Adiciona os parâmetros para evitar injeção de SQL
+                    cmd.Parameters.AddWithValue("@referencia", consolidadoDTO.Referencia);
+                    Console.WriteLine(insertQuery);
+                    cmd.ExecuteNonQuery();
+                }
+                conn.Close();
+
+                using (var cmd = new SqlCommand(selectQuery.ToString(), conn))
+                {
+                    conn.Open();
+                    consol = (int)await cmd.ExecuteScalarAsync();
+                    conn.Close();
+                }
+
+
+                for (int i = 0; i < consolidadoDTO.Lancamentos.Count; i++)
+                {
+                    conn.Open();
+                    updateQuery.Append("UPDATE lancamentos SET consolidado =" + consol + " WHERE id = " + consolidadoDTO.Lancamentos[i].ID);
+                    using (var cmd = new SqlCommand(updateQuery.ToString(), conn))
+                    {
+                        cmd.ExecuteNonQuery();
+                    }
+                    conn.Close();
+                }
+
+
+                var result = new ResultViewModel()
+                {
+                    Data = "",
+                    Message = "Itens cosolidados com sucesso",
+                    Success = true
+                };
+
+                conn.Close();
+                return result;
+
+            }
+        }
+        catch (Exception ex)
+        {
             var result = new ResultViewModel()
             {
                 Data = ex.Message,

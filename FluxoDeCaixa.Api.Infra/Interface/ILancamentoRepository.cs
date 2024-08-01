@@ -15,4 +15,6 @@ public interface ILancamentoRepository
     Task<ResultViewModel> GetAllLancamentos();
 
     Task<List<LancamentoModel>> GetLancamentoByData(DateTime startTime, DateTime endTime);
+
+    Task<ResultViewModel> PostConsolidado(ConnsolidadoDTO consolidadoDTO);
 }
