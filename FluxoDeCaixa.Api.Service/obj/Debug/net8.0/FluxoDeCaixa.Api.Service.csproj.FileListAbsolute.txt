@@ -1,0 +1,17 @@
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Service\bin\Debug\net8.0\FluxoDeCaixa.Api.Service.deps.json
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Service\bin\Debug\net8.0\FluxoDeCaixa.Api.Service.dll
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Service\bin\Debug\net8.0\FluxoDeCaixa.Api.Service.pdb
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Service\bin\Debug\net8.0\FluxoDeCaixa.Api.Domain.dll
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Service\bin\Debug\net8.0\FluxoDeCaixa.Api.Infra.dll
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Service\bin\Debug\net8.0\FluxoDeCaixa.Api.Infra.pdb
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Service\bin\Debug\net8.0\FluxoDeCaixa.Api.Domain.pdb
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Service\obj\Debug\net8.0\FluxoDeCaixa.Api.Service.csproj.AssemblyReference.cache
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Service\obj\Debug\net8.0\FluxoDeCaixa.Api.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Service\obj\Debug\net8.0\FluxoDeCaixa.Api.Service.AssemblyInfoInputs.cache
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Service\obj\Debug\net8.0\FluxoDeCaixa.Api.Service.AssemblyInfo.cs
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Service\obj\Debug\net8.0\FluxoDeCaixa.Api.Service.csproj.CoreCompileInputs.cache
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Service\obj\Debug\net8.0\FluxoDeCaixa.Api.Service.csproj.CopyComplete
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Service\obj\Debug\net8.0\FluxoDeCaixa.Api.Service.dll
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Service\obj\Debug\net8.0\refint\FluxoDeCaixa.Api.Service.dll
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Service\obj\Debug\net8.0\FluxoDeCaixa.Api.Service.pdb
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Service\obj\Debug\net8.0\ref\FluxoDeCaixa.Api.Service.dll

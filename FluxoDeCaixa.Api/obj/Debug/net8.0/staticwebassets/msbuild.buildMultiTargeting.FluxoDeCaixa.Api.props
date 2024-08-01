@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\FluxoDeCaixa.Api.props" />
+</Project>

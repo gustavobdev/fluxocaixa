@@ -1,0 +1,17 @@
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Infra\bin\Debug\net8.0\FluxoDeCaixa.Api.Infra.deps.json
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Infra\bin\Debug\net8.0\FluxoDeCaixa.Api.Infra.runtimeconfig.json
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Infra\bin\Debug\net8.0\FluxoDeCaixa.Api.Infra.dll
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Infra\bin\Debug\net8.0\FluxoDeCaixa.Api.Infra.pdb
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Infra\bin\Debug\net8.0\FluxoDeCaixa.Api.Domain.dll
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Infra\bin\Debug\net8.0\FluxoDeCaixa.Api.Domain.pdb
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Infra\obj\Debug\net8.0\FluxoDeCaixa.Api.Infra.csproj.AssemblyReference.cache
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Infra\obj\Debug\net8.0\FluxoDeCaixa.Api.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Infra\obj\Debug\net8.0\FluxoDeCaixa.Api.Infra.AssemblyInfoInputs.cache
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Infra\obj\Debug\net8.0\FluxoDeCaixa.Api.Infra.AssemblyInfo.cs
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Infra\obj\Debug\net8.0\FluxoDeCaixa.Api.Infra.csproj.CoreCompileInputs.cache
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Infra\obj\Debug\net8.0\FluxoDeCaixa.Api.Infra.csproj.CopyComplete
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Infra\obj\Debug\net8.0\FluxoDeCaixa.Api.Infra.dll
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Infra\obj\Debug\net8.0\refint\FluxoDeCaixa.Api.Infra.dll
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Infra\obj\Debug\net8.0\FluxoDeCaixa.Api.Infra.pdb
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Infra\obj\Debug\net8.0\FluxoDeCaixa.Api.Infra.genruntimeconfig.cache
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Infra\obj\Debug\net8.0\ref\FluxoDeCaixa.Api.Infra.dll

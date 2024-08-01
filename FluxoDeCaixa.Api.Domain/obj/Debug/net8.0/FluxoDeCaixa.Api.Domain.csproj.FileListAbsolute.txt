@@ -1,0 +1,11 @@
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Domain\bin\Debug\net8.0\FluxoDeCaixa.Api.Domain.deps.json
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Domain\bin\Debug\net8.0\FluxoDeCaixa.Api.Domain.dll
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Domain\bin\Debug\net8.0\FluxoDeCaixa.Api.Domain.pdb
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Domain\obj\Debug\net8.0\FluxoDeCaixa.Api.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Domain\obj\Debug\net8.0\FluxoDeCaixa.Api.Domain.AssemblyInfoInputs.cache
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Domain\obj\Debug\net8.0\FluxoDeCaixa.Api.Domain.AssemblyInfo.cs
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Domain\obj\Debug\net8.0\FluxoDeCaixa.Api.Domain.csproj.CoreCompileInputs.cache
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Domain\obj\Debug\net8.0\FluxoDeCaixa.Api.Domain.dll
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Domain\obj\Debug\net8.0\refint\FluxoDeCaixa.Api.Domain.dll
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Domain\obj\Debug\net8.0\FluxoDeCaixa.Api.Domain.pdb
+C:\Users\GustavoBomfimSaco\Documents\Prova\FluxoDeCaixa.Api\FluxoDeCaixa.Api.Domain\obj\Debug\net8.0\ref\FluxoDeCaixa.Api.Domain.dll
